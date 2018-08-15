@@ -25,7 +25,7 @@ namespace LoggingKata
 
             foreach (var line in locations)  //This foreach loop goes through each of our parsed locations, and assigns them a GeoCoordinate as our 'Origin point'
             {
-                GeoCoordinate Geo1 = new GeoCoordinate(); //Don't ask how I figured this part out, trial and error
+                GeoCoordinate Geo1 = new GeoCoordinate(); //Create a new instance of the geocoordinate class
 
                 Geo1.Latitude = line.Location.Latitude; //To set up a GeoCoordinate we have to assign the Lat and Lon as seperate values 
                 Geo1.Longitude = line.Location.Longitude;
@@ -54,4 +54,4 @@ namespace LoggingKata
             Console.ReadLine();
         }
     }
-} // Snickerdoodle
+} 
